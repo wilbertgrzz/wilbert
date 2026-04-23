@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Dunia Bersama Wilbert</title>
+
+    <link rel="icon" href="854878.png">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-image: url("");
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        header {
+            background: transparent;
+            text-align: center;
+            padding: 60px 20px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .btn {
+            background: yellow;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: orange;
+            transform: scale(1.1);
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: yellow;
+            width: 0%;
+            transition: 0.3s;
+            margin: auto;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: yellow;
+        }
+
+        article {
+            background: rgba(255, 255, 255, 0.95);
+            color: black;
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 80%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        .media {
+            text-align: center;
+        }
+
+        aside {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Jelajah Dunia Bersama Wilbert</h1>
+        <p>Menyediakan pengalaman wisata terbaik di Indonesia dan dunia</p>
+
+        <a href="#destinasi" class="btn">Jelajahi Sekarang</a>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinasi">Destinasi</a>
+        <a href="#paket">Paket Wisata</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main id="destinasi">
+        <h2>Tempat Wisata Populer</h2>
+
+        <article>
+            <img src="img/danau toba.webp">
+            <h3>Danau Toba - Indonesia</h3>
+            <p>Danau toba adalah tempa wisata yang seinr dikunjungi oleh banyak orang, yang berada di sumatera utara.
+            </p>
+
+            <h4>Destination:</h4>
+            <ul>
+                <li>Berwisata ke Pulau Samosir.</li>
+                <li>melihat panorama dari Bukit Holbung.</li>
+                <li>menikmati pemandangan matahari terbit/terbenam.</li>
+                <li>Naik kapal atau bermain jettski di tengah danau.</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="pattaya-beach.jpg">
+            <h3>Pattaya-beach - Thailand</h3>
+            <p>Tempat wisata ikonik di Thailand dengan pemandangan yang sangat indah.</p>
+
+            <h4>Destination:</h4>
+            <ul>
+                <li>Beaches & Islands</li>
+                <li>Nightlife & Entertainment</li>
+                <li>sightseeing</li>
+                <li>Terminal 21 mall</li>
+            </ul>
+
+        </article>
+
+        <article>
+            <img src="pantai pink.jpeg">
+            <h3>Pantai Pink - Labuan Bajo</h3>
+            <p>Pantai unik dengan pasir berwarna pink yang sangat langka di dunia.</p>
+
+            <h4>Destination:</h4>
+            <ul>
+                <li>Snorkeling</li>
+                <li>kapal</li>
+                <li>ada pandu wisata</li>
+                <li>Area camping</li>
+            </ul>
+
+        </article>
+    </main>
+
+    <section id="paket">
+        <h2>Paket Wisata</h2>
+
+        <article>
+            <img src="phuket.jpg">
+            <h3>Paket Wisata ke phuket thailand termurah dan terbaik</h3>
+
+            <p>Nikmati keindahan di pulau terbaik di dunia.</p>
+
+            <p><b>Harga:</b> Rp 10.000.000</p>
+
+            <h4>Fasilitas:</h4>
+            <ul>
+                <li>Hotel 3 malam</li>
+                <li>Transportasi</li>
+                <li>Makan 3x sehari</li>
+                <li>Tour guide</li>
+            </ul>
+
+        </article>
+
+        <article>
+            <img src="universal sudio.jpg">
+            <h3>Paket Wisata pergi ke universal studio singapore</h3>
+
+            <p>Menikmati indahny view terbaik di singapore dengan harga terjangkau.</p>
+
+            <p><b>Harga:</b> Rp 7.000.000</p>
+
+            <h4>Fasilitas:</h4>
+            <ul>
+                <li>Trasportasi</li>
+                <li>Hotel 2 malam</li>
+                <li>Tour guide</li>
+                <li>Makan 3 kali </li>
+            </ul>
+
+        </article>
+
+    </section>
+
+    <section class="media">
+        <h2>Video Promosi</h2>
+        <video width="1100" controls>
+            <source src="video.mp4">
+        </video>
+
+        <h2>Audio Promosi</h2>
+        <audio controls>
+            <source src="audio.mp3">
+        </audio>
+    </section>
+
+    <section>
+        <h2>Penjelasan singkat</h2>
+        <p>
+            Pada website Jelajah Dunia Bersama Wilbert, saya menerapkan konsep tipografi seperti penggunaan warna,
+            jenis font, ukuran teks, text shadow, text transform, dan perataan teks agar tampilan website lebih menarik
+            dan mudah dibaca oleh pengunjung.
+        </p>
+
+        <p>
+            Selain itu, saya juga menambahkan elemen multimedia berupa gambar, video, dan audio. Gambar digunakan untuk
+            menampilkan destinasi wisata yang tersedia. Video digunakan sebagai media promosi untuk menampilkan
+            keindahan
+            tempat wisata agar menarik perhatian pengunjung. Audio digunakan sebagai media informasi dan promosi agar
+            website lebih interaktif.
+        </p>
+
+        <p>
+            Dengan adanya tipografi dan multimedia, website menjadi lebih menarik, informatif, dan nyaman dilihat oleh
+            pengunjung.
+        </p>
+    </section>
+
+    <h3>anda dapat menghubungi kita melalui :</h3>
+    <p>
+        Facebook: <a href="#">Facebook</a> <br>
+        Twitter: <a href="#">Twitter</a> <br>
+        Instagram: <a href="#">Instagram</a> <br>
+        Email Google: <a href="#">Email Saya</a>
+    </p>
+
+    <aside id="kontak">
+        <h2>Event Travel Mendatang</h2>
+        <ul>
+            <li>Travel 2026</li>
+            <li>Festival Wisata</li>
+            <li>Promo Liburan</li>
+            <li>Diskon Honeymoon</li>
+            <li>Promo Akhir tahun</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>© 2026 Jelajah Dunia Wilbert</p>
+        <p>Ikuti kami di media sosial:</p>
+
+        <p>
+            Instagram | Facebook | TikTok | whatsapp
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
